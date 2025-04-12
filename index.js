@@ -16,6 +16,7 @@ app.use(bodyParser.json())
 const routerApiV1 = require("./v1/routes/index.route.js");
 routerApiV1(app);
 
+
 app.listen(port, () => {
     console.log(`Chay tren cong ${port}`)
 })
