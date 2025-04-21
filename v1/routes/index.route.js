@@ -22,6 +22,6 @@ module.exports = (app) => {
 
     app.use(`${version}/soil-moisure`, soilMoisureRoutes)
 
-    // app.use(`${version}/watering-schedule`, wateringScheduleRoutes)
+    app.use(`${version}/watering-schedule`, wateringScheduleRoutes)
 
 }

@@ -14,7 +14,7 @@ const WateringSchedule = require("./v1/models/wateringSchedule.model.js");
 app.use(cors()) // all url acess
 app.use(bodyParser.json())
 
-cron.schedule('0 16 * * *', async () => {
+cron.schedule('0 12,16 * * *', async () => {
     const log = new WateringSchedule({
         date: new Date(),
         name: "Tưới cây tự động",
