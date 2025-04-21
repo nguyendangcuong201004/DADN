@@ -4,6 +4,7 @@ const dhtMoisureRoutes = require("./dht-moisure.route.js")
 const dhtTempRoutes = require("./dht-temp.route.js")
 const lightSensorRoutes = require("./light-sensors.route.js")
 const soilMoisureRoutes = require("./soil-moisure.route.js")
+const wateringScheduleRoutes = require("./wateringSchedule.route.js"); 
 
 
 module.exports = (app) => {
@@ -21,7 +22,6 @@ module.exports = (app) => {
 
     app.use(`${version}/soil-moisure`, soilMoisureRoutes)
 
-
-
+    // app.use(`${version}/watering-schedule`, wateringScheduleRoutes)
 
 }
