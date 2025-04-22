@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 const wateringScheduleShema = new mongoose.Schema({
-    date: Date,
     name: String,
     time: Date,
     note: String,
